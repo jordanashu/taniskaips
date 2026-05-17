@@ -20,12 +20,12 @@ const PageHeader = ({ title, subtitle, breadcrumb }) => (
 );
 
 const About = () => {
-  const team = [
-    { name: 'Dr. Ramesh Sharma', role: 'Principal', initial: 'R', desc: 'Ph.D. in Education with 25+ years of leadership experience in CBSE institutions.' },
-    { name: 'Mrs. Anita Verma', role: 'Vice Principal', initial: 'A', desc: 'M.Ed. with specialization in curriculum development and student welfare.' },
-    { name: 'Mr. Sunil Gupta', role: 'Head of Academics', initial: 'S', desc: 'M.Sc. Mathematics, State-level best teacher award winner with 20 years experience.' },
-    { name: 'Mrs. Kavita Singh', role: 'Head of Co-Curriculars', initial: 'K', desc: 'Trained in performing arts, leading the sports & cultural development programs.' },
-  ];
+  // const team = [
+  //   { name: 'Dr. Ramesh Sharma', role: 'Principal', initial: 'R', desc: 'Ph.D. in Education with 25+ years of leadership experience in CBSE institutions.' },
+  //   { name: 'Mrs. Anita Verma', role: 'Vice Principal', initial: 'A', desc: 'M.Ed. with specialization in curriculum development and student welfare.' },
+  //   { name: 'Mr. Sunil Gupta', role: 'Head of Academics', initial: 'S', desc: 'M.Sc. Mathematics, State-level best teacher award winner with 20 years experience.' },
+  //   { name: 'Mrs. Kavita Singh', role: 'Head of Co-Curriculars', initial: 'K', desc: 'Trained in performing arts, leading the sports & cultural development programs.' },
+  // ];
 
   const values = [
     { icon: '🎓', title: 'Academic Excellence', desc: 'Maintaining the highest standards of academic achievement through innovative teaching methods.' },
@@ -135,7 +135,7 @@ const About = () => {
       </section>
 
       {/* Leadership */}
-      <section style={{padding:'80px 0',background:'#f4f7fc'}}>
+      {/* <section style={{padding:'80px 0',background:'#f4f7fc'}}>
         <div className="container">
           <div className="text-center mb-5">
             <h2 className="section-title">Our Leadership Team</h2>
@@ -164,7 +164,7 @@ const About = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Gallery snippet */}
       <section style={{padding:'80px 0',background:'white'}}>

@@ -19,7 +19,7 @@ const Navbar = () => {
     { path: '/', label: 'Home' },
     { path: '/about', label: 'About Us' },
     { path: '/contact', label: 'Contact Us' },
-    // { path: '/mandatory-disclosure', label: 'Mandatory Public Disclosure' },
+    { path: '/mandatory-disclosure', label: 'Mandatory Public Disclosure' },
   ];
 
   return (
@@ -35,7 +35,7 @@ const Navbar = () => {
               </span>
               <span className="d-none d-md-flex align-items-center gap-1">
                 <FaEnvelope size={11} style={{color:'#c8a900'}} />
-                <a href="mailto:info@tanishkaips.com">info@tanishkaips.com</a>
+                <a href="mailto:info@tanishkaips.com">principal@tanishkaips.com</a>
               </span>
             </div>
             <div className="d-none d-lg-flex align-items-center gap-2">

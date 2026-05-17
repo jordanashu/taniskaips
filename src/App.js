@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
-// import MandatoryDisclosure from './pages/MandatoryDisclosure';
+import MandatoryDisclosure from './pages/MandatoryDisclosure';
 import './App.css';
 
 const ScrollToTop = () => {
@@ -25,7 +25,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            {/* <Route path="/mandatory-disclosure" element={<MandatoryDisclosure />} /> */}
+            <Route path="/mandatory-disclosure" element={<MandatoryDisclosure />} />
             <Route path="*" element={
               <div style={{padding:'100px 20px',textAlign:'center'}}>
                 <h2 style={{color:'#003366',fontSize:'3rem',fontWeight:800}}>404</h2>

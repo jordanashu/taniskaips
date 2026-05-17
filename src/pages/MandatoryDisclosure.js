@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaFilePdf, FaDownload, FaCheckCircle } from 'react-icons/fa';
+import {  FaDownload, FaCheckCircle } from 'react-icons/fa';
 
 const PageHeader = ({ title, subtitle, breadcrumb }) => (
   <div className="page-header">
@@ -63,51 +63,51 @@ const DisclosureTable = ({ title, rows }) => (
 const MandatoryDisclosure = () => {
   const generalInfo = [
     { info: 'Name of the School', detail: 'Tanishka International Public School' },
-    { info: 'Affiliation Number', detail: 'XXXXXXXX' },
-    { info: 'School Code', detail: 'XXXXXX' },
-    { info: 'Complete Address with Pin Code', detail: 'Tanishka International Public School, Your City, State – PIN Code, India' },
-    { info: 'Principal Name & Qualification', detail: 'Dr. Ramesh Sharma, Ph.D. in Education' },
-    { info: 'School Email ID', detail: 'info@tanishkaips.com' },
-    { info: 'Contact Details (Landline/Mobile)', detail: '+91 12345 67890 / +91 09876 54321' },
+    { info: 'Affiliation Number', detail: '1452' },
+    { info: 'School Code', detail: '261452' },
+    { info: 'Complete Address with Pin Code', detail: 'SAINIK COLONY PULIYA NO-1 SANJAY NAGAR BAREILLY,243005'},
+    { info: 'Principal Name & Qualification', detail: 'Mr. KAMLASH KUMAR DINKAR, M.SC.,M.A.,B.ED' },
+    { info: 'School Email ID', detail: 'principal@tanishkaips.com' },
+    { info: 'Contact Details (Landline/Mobile)', detail: '+91 976022651 / +91 9760941319' },
   ];
 
   const documentsInfo = [
-    { info: 'Copies of Affiliation / Upgradation Letter', detail: 'CBSE Affiliation Certificate', doc: '#' },
-    { info: 'Copies of Societies / Trust / Company Registration', detail: 'Registration Certificate', doc: '#' },
-    { info: 'Copy of No Objection Certificate (NOC)', detail: 'NOC from State Govt', doc: '#' },
-    { info: 'Copy of Recognition Certificate', detail: 'Recognition Certificate', doc: '#' },
-    { info: 'Copy of Valid Building Safety Certificate', detail: 'Building Safety Certificate', doc: '#' },
-    { info: 'Copy of Valid Fire Safety Certificate', detail: 'Fire Safety Certificate', doc: '#' },
-    { info: 'Copy of the DEO Certificate submitted by the School', detail: 'DEO Certificate', doc: '#' },
-    { info: 'Copies of Valid Water, Health & Sanitation Certificates', detail: 'Health Sanitation Certificate', doc: '#' },
+    { info: 'Copies of Affiliation / Upgradation Letter', detail: 'CBSE Affiliation Certificate', doc: '/documents/affiliation-letter.pdf' },
+    { info: 'Copies of Societies / Trust / Company Registration', detail: 'Registration Certificate', doc: '/documents/registration-certificate.pdf' },
+    { info: 'Copy of No Objection Certificate (NOC)', detail: 'NOC from State Govt', doc: '/documents/noc.pdf' },
+    { info: 'Copy of Recognition Certificate', detail: 'Recognition Certificate', doc: '/documents/recognition-certificate.pdf' },
+    { info: 'Copy of Valid Building Safety Certificate', detail: 'Building Safety Certificate', doc: '/documents/building-safety.pdf' },
+    { info: 'Copy of Valid Fire Safety Certificate', detail: 'Fire Safety Certificate', doc: '/documents/fire-safety.pdf' },
+    { info: 'Copy of the DEO Certificate submitted by the School', detail: 'DEO Certificate', doc: '/documents/deo-certificate.pdf' },
+    { info: 'Copies of Valid Water, Health & Sanitation Certificates', detail: 'Health Sanitation Certificate', doc: '/documents/health-sanitation.pdf' },
   ];
 
   const resultInfo = [
-    { info: 'Fee Structure of the School', detail: 'As per CBSE norms and school guidelines', doc: '#' },
-    { info: 'Annual Academic Calendar', detail: 'Academic Year 2025-26', doc: '#' },
-    { info: 'List of School Management Committee (SMC)', detail: 'List Available', doc: '#' },
-    { info: 'List of Parents Teachers Association (PTA)', detail: 'List Available', doc: '#' },
-    { info: 'Last Three-Year Result of the Board Examination', detail: 'Board Result Data', doc: '#' },
+    { info: 'Fee Structure of the School', detail: 'As per CBSE norms and school guidelines', doc: '/documents/fee-structure.pdf' },
+    { info: 'Annual Academic Calendar', detail: 'Academic Year 2025-26', doc: '/documents/academic-calendar.pdf' },
+    { info: 'List of School Management Committee (SMC)', detail: 'List Available', doc: '/documents/smc-list.pdf' },
+    { info: 'List of Parents Teachers Association (PTA)', detail: 'List Available', doc: '/documents/pta-list.pdf' },
+    { info: 'Last Three-Year Result of the Board Examination', detail: 'Board Result Data', doc: '/documents/board-results.pdf' },
   ];
 
   const staffInfo = [
-    { info: 'Principal', detail: 'Dr. Ramesh Sharma' },
-    { info: 'Total No. of Teachers', detail: '80+' },
-    { info: 'PGT Teachers', detail: '25' },
-    { info: 'TGT Teachers', detail: '35' },
-    { info: 'PRT Teachers', detail: '20+' },
-    { info: 'Teachers Section Ratio', detail: '1:30' },
-    { info: 'Details of Special Educator', detail: 'Available' },
-    { info: 'Details of Counsellors', detail: 'Available' },
+    { info: 'Principal', detail: 'Mr. KAMLASH KUMAR DINKAR' },
+    { info: 'Total No. of Teachers', detail: '18' },
+    { info: 'PGT Teachers', detail: '0' },
+    { info: 'TGT Teachers', detail: '6' },
+    { info: 'PRT Teachers', detail: '12' },
+    { info: 'Teachers Section Ratio', detail: '1:5' },
+    { info: 'Details of Special Educator', detail: 'Mr. SHIVAM MAURYA' },
+    { info: 'Details of Counsellors', detail: 'Mr. ADITYA KUMAR' },
   ];
 
   const infrastructureInfo = [
-    { info: 'Total Campus Area of the School', detail: 'As per CBSE norms (in sq. mtrs.)' },
-    { info: 'No. & Size of Classrooms', detail: '50+ Classrooms (as per norms)' },
-    { info: 'No. & Size of Laboratories', detail: '5 Laboratories (Science, Computer, Language, etc.)' },
-    { info: 'Internet Facility (Y/N)', detail: 'Yes – High Speed Broadband' },
-    { info: 'No. of Girls Toilets', detail: 'As per norms' },
-    { info: 'No. of Boys Toilets', detail: 'As per norms' },
+    { info: 'Total Campus Area of the School', detail: '2500 (in sq. mtrs.)' },
+    { info: 'No. & Size of Classrooms', detail: '34, 6*8 (in sq. mtrs.)' },
+    { info: 'No. & Size of Laboratories', detail: '6, 6*9 (in sq. mtrs.)' },
+    { info: 'Internet Facility (Y/N)', detail: 'Yes' },
+    { info: 'No. of Girls Toilets', detail: '10' },
+    { info: 'No. of Boys Toilets', detail: '10' },
     { info: 'Link of YouTube Video of the Inspection of School Covering', detail: 'Available on Request', doc: '#' },
   ];
 
@@ -144,7 +144,7 @@ const MandatoryDisclosure = () => {
           <DisclosureTable title="E. School Infrastructure" rows={infrastructureInfo} />
 
           {/* Download All */}
-          <div style={{
+          {/* <div style={{
             textAlign:'center',marginTop:'2.5rem',padding:'2.5rem',
             background:'white',borderRadius:'16px',
             boxShadow:'0 8px 30px rgba(0,0,0,0.08)'
@@ -172,7 +172,7 @@ const MandatoryDisclosure = () => {
                 Contact School
               </Link>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </>
