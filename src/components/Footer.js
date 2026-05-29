@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import {
   FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock,
   FaFacebook, FaTwitter, FaYoutube, FaInstagram, FaLinkedin,
-  FaChevronRight, FaHeart
+  FaChevronRight
 } from 'react-icons/fa';
 
 const Footer = () => {
@@ -126,7 +126,7 @@ const Footer = () => {
               <a href="https://tanishkaips.com">tanishkaips.com</a>
             </span>
             <span style={{display:'flex',alignItems:'center',gap:'4px'}}>
-              Made By <FaHeart size={12} style={{color:'#e63946',margin:'0 4px'}} /> Ashutosh
+              Made By Ashutosh
             </span>
           </div>
         </div>

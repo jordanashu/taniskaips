@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {  FaDownload, FaCheckCircle } from 'react-icons/fa';
+import {  FaDownload, FaCheckCircle,FaFilePdf } from 'react-icons/fa';
 
 const PageHeader = ({ title, subtitle, breadcrumb }) => (
   <div className="page-header">
@@ -65,10 +65,10 @@ const MandatoryDisclosure = () => {
     { info: 'Name of the School', detail: 'Tanishka International Public School' },
     { info: 'Affiliation Number', detail: '1452' },
     { info: 'School Code', detail: '261452' },
-    { info: 'Complete Address with Pin Code', detail: 'SAINIK COLONY PULIYA NO-1 SANJAY NAGAR BAREILLY,243005'},
-    { info: 'Principal Name & Qualification', detail: 'Mr. KAMLASH KUMAR DINKAR, M.SC.,M.A.,B.ED' },
-    { info: 'School Email ID', detail: 'principal@tanishkaips.com' },
-    { info: 'Contact Details (Landline/Mobile)', detail: '+91 976022651 / +91 9760941319' },
+    { info: 'Complete Address with Pin Code', detail: 'SAINIK COLONY PULIYA NO 1 SANJAY NAGAR ,BAREILLY, UTTAR PRADESH, BAREILLY, UTTARPRADESH - 243005'},
+    { info: 'Principal Name & Qualification', detail: 'Mr.Sevendra Pal Verma, M.Sc. Physics M.Ed.' },
+    { info: 'School Email ID', detail: 'deltaacademy51@gmail.com' },
+    { info: 'Contact Details (Landline/Mobile)', detail: '+91 9458751691' },
   ];
 
   const documentsInfo = [
@@ -91,31 +91,35 @@ const MandatoryDisclosure = () => {
   ];
 
   const staffInfo = [
-    { info: 'Principal', detail: 'Mr. KAMLASH KUMAR DINKAR' },
-    { info: 'Total No. of Teachers', detail: '18' },
-    { info: 'PGT Teachers', detail: '0' },
+    { info: 'Principal', detail: 'Mr.Sevendra Pal Verma' },
+    { info: 'Total No. of Teachers', detail: '20' },
+    { info: 'PGT Teachers', detail: '9' },
     { info: 'TGT Teachers', detail: '6' },
-    { info: 'PRT Teachers', detail: '12' },
-    { info: 'Teachers Section Ratio', detail: '1:5' },
+    { info: 'PRT Teachers', detail: '5' },
+    { info: 'Teachers Section Ratio', detail: '1.5' },
     { info: 'Details of Special Educator', detail: 'Mr. SHIVAM MAURYA' },
     { info: 'Details of Counsellors', detail: 'Mr. ADITYA KUMAR' },
   ];
 
   const infrastructureInfo = [
-    { info: 'Total Campus Area of the School', detail: '2500 (in sq. mtrs.)' },
-    { info: 'No. & Size of Classrooms', detail: '34, 6*8 (in sq. mtrs.)' },
-    { info: 'No. & Size of Laboratories', detail: '6, 6*9 (in sq. mtrs.)' },
+    { info: 'Total Campus Area of the School (IN SQ MTR)', detail: '6200' },
+    { info: 'No. & Size of Classrooms (IN SQ MTR)', detail: '35 & 4800' },
+    { info: 'No. & Size of Laboratories (IN SQ MTR)', detail: '5, 600 ' },
     { info: 'Internet Facility (Y/N)', detail: 'Yes' },
     { info: 'No. of Girls Toilets', detail: '10' },
     { info: 'No. of Boys Toilets', detail: '10' },
-    { info: 'Link of YouTube Video of the Inspection of School Covering', detail: 'Available on Request', doc: '#' },
+    { info: 'LINK OF YOUTUBE VIDEO OF THE INSPECTION OF SCHOOL COVERING THE INFRASTRUCTURE OF THE SCHOOL',doc: 'https://www.youtube.com/shorts/lgYvCYF7y7Y' },
   ];
+
+
+  
+   
 
   return (
     <>
       <PageHeader
         title="Mandatory Public Disclosure"
-        subtitle="Transparency and accountability — information disclosed as per CBSE norms"
+        subtitle=""
         breadcrumb={['Mandatory Public Disclosure']}
       />
 
@@ -131,9 +135,8 @@ const MandatoryDisclosure = () => {
             <FaCheckCircle style={{color:'#c8a900',fontSize:'1.5rem',flexShrink:0,marginTop:'2px'}} />
             <div>
               <h5 style={{color:'#003366',fontWeight:700,marginBottom:'6px'}}>Mandatory Public Disclosure (MPD)</h5>
-              <p style={{color:'#555',fontSize:'0.88rem',lineHeight:'1.7',margin:0}}>
-                As per CBSE guidelines, schools are required to publicly disclose the following information. This page is updated regularly to ensure transparency and accountability to all stakeholders including parents, students, and regulatory bodies. All information provided here is as per the latest CBSE affiliation norms.
-              </p>
+            
+              
             </div>
           </div>
 
@@ -141,10 +144,200 @@ const MandatoryDisclosure = () => {
           <DisclosureTable title="B. Documents & Information" rows={documentsInfo} />
           <DisclosureTable title="C. Results & Academics" rows={resultInfo} />
           <DisclosureTable title="D. Staff (Teaching)" rows={staffInfo} />
-          <DisclosureTable title="E. School Infrastructure" rows={infrastructureInfo} />
 
-          {/* Download All */}
-          {/* <div style={{
+<div class="container-fluid">
+  <div class="result-section">
+
+    <h6 class="result-title">RESULT CLASS : X</h6>
+
+    <div class="table-responsive">
+      <table class="table table-bordered align-middle">
+        
+        <thead>
+          <tr>
+            <th>SL NO.</th>
+            <th>YEAR</th>
+            <th>NO. OF REGISTERED STUDENTS</th>
+            <th>NO. OF STUDENTS PASSED</th>
+            <th>PASS PERCENTAGE</th>
+            <th>REMARKS</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>2025</td>
+            <td>10</td>
+            <td>09</td>
+            <td>99</td>
+            <td>-</td>
+          </tr>
+        </tbody>
+
+      </table>
+    </div>
+
+  </div>
+</div>
+
+          <DisclosureTable title="E. School Infrastructure" rows={infrastructureInfo} />
+         <div class="container">
+    <div class="table-container">
+          <h6>F:Teacher Details</h6>
+           <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+                <thead>
+                    <tr>
+                        <th>SL No.</th>
+                        <th>Teacher Name</th>
+                        <th>Designation</th>
+                        <th>Qualification</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>SEVENDRA PAL VERMA</td>
+                        <td>PRINCIPAL</td>
+                        <td>M.SC, M.ED</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>MANMOHAN SHARMA</td>
+                        <td>PGT</td>
+                        <td>M.SC, B.ED</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>KAMLESH KUMAR DINKAR</td>
+                        <td>PGT</td>
+                        <td>M.SC (Botany)</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>SANJAY SHARMA</td>
+                        <td>PGT</td>
+                        <td>M.COM</td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>ALKA SINGHAL</td>
+                        <td>PGT</td>
+                        <td>MA (English)</td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td>ANITA SINGH</td>
+                        <td>PGT</td>
+                        <td>MA (English)</td>
+                    </tr>
+
+                    <tr>
+                        <td>7</td>
+                        <td>JITENDRA KUMAR</td>
+                        <td>PGT</td>
+                        <td>MA (English)</td>
+                    </tr>
+
+                    <tr>
+                        <td>8</td>
+                        <td>PRASHANT AGARWAL</td>
+                        <td>PGT</td>
+                        <td>M.SC (Physics)</td>
+                    </tr>
+
+                    <tr>
+                        <td>9</td>
+                        <td>DEEKSHA MAHESHWARI</td>
+                        <td>PGT</td>
+                        <td>M.SC (Maths)</td>
+                    </tr>
+
+                    <tr>
+                        <td>10</td>
+                        <td>VADINEE JOSHI</td>
+                        <td>PGT</td>
+                        <td>MBA</td>
+                    </tr>
+
+                    <tr>
+                        <td>11</td>
+                        <td>PRIYA</td>
+                        <td>TGT</td>
+                        <td>M.A (Home Science), B.ED</td>
+                    </tr>
+
+                    <tr>
+                        <td>12</td>
+                        <td>SANJANA MISHRA</td>
+                        <td>TGT</td>
+                        <td>M.SC, B.ED</td>
+                    </tr>
+
+                    <tr>
+                        <td>13</td>
+                        <td>SACHIN VERMA</td>
+                        <td>TGT</td>
+                        <td>MCA</td>
+                    </tr>
+
+                    <tr>
+                        <td>14</td>
+                        <td>ANITA DEVI</td>
+                        <td>TGT</td>
+                        <td>MA (English)</td>
+                    </tr>
+
+                    <tr>
+                        <td>15</td>
+                        <td>PRATIKSHA</td>
+                        <td>TGT</td>
+                        <td>M.SC (ZBC)</td>
+                    </tr>
+
+                    <tr>
+                        <td>16</td>
+                        <td>MOHAN LAL</td>
+                        <td>TGT</td>
+                        <td>MA (Hindi)</td>
+                    </tr>
+
+                    <tr>
+                        <td>17</td>
+                        <td>ASHUTOSH MISHRA</td>
+                        <td>PRT</td>
+                        <td>M.A, ENG.</td>
+                    </tr>
+
+                    <tr>
+                        <td>18</td>
+                        <td>ASHMITA GUPTA</td>
+                        <td>PRT</td>
+                        <td>BBA</td>
+                    </tr>
+
+                    <tr>
+                        <td>19</td>
+                        <td>ANIKTA GUPTA</td>
+                        <td>PRT</td>
+                        <td>BCA</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        </div>
+        </div>
+
+          
+          <div style={{
             textAlign:'center',marginTop:'2.5rem',padding:'2.5rem',
             background:'white',borderRadius:'16px',
             boxShadow:'0 8px 30px rgba(0,0,0,0.08)'
@@ -152,10 +345,10 @@ const MandatoryDisclosure = () => {
             <FaFilePdf style={{fontSize:'3rem',color:'#e63946',marginBottom:'1rem'}} />
             <h4 style={{color:'#003366',fontWeight:700,marginBottom:'0.7rem'}}>Download Complete Disclosure</h4>
             <p style={{color:'#666',fontSize:'0.9rem',marginBottom:'1.5rem',maxWidth:'480px',margin:'0 auto 1.5rem'}}>
-              Download the complete mandatory disclosure document as required by CBSE for affiliated schools.
+              
             </p>
             <div style={{display:'flex',gap:'12px',justifyContent:'center',flexWrap:'wrap'}}>
-              <a href="#!" onClick={e=>e.preventDefault()} style={{
+              <a href="/documents/MANDATORY_PUBLIC_DISCLOSURE.pdf" target="_blank" rel="noopener noreferrer" style={{
                 display:'inline-flex',alignItems:'center',gap:'8px',
                 background:'linear-gradient(135deg,#003366,#005599)',
                 color:'white',padding:'12px 28px',borderRadius:'50px',
@@ -172,7 +365,7 @@ const MandatoryDisclosure = () => {
                 Contact School
               </Link>
             </div>
-          </div> */}
+          </div>
         </div>
       </section>
     </>

@@ -228,10 +228,10 @@ const NoticesSection = () => {
 /* ───────── Testimonials ───────── */
 const TestimonialsSection = () => {
   const testimonials = [
-    { text: 'Tanishka International Public School has been a wonderful journey for my son. The teachers are incredibly dedicated and the facilities are excellent. We are proud parents!', name: 'Priya Sharma', role: 'Parent of Class X Student', initial: 'P' },
-    { text: 'The school has given my daughter a strong foundation in academics as well as life skills. She has grown into a confident young woman, and I credit the school\'s environment for this.', name: 'Rajesh Kumar', role: 'Parent of Class XII Student', initial: 'R' },
+    { text: 'Tanishka International Public School has been a wonderful journey for my son. The teachers are incredibly dedicated and the facilities are excellent. We are proud parents!', name: 'Priya Sharma', role: 'Parent of Class V Student', initial: 'P' },
+    { text: 'The school has given my daughter a strong foundation in academics as well as life skills. She has grown into a confident young woman, and I credit the school\'s environment for this.', name: 'Rajesh Kumar', role: 'Parent of Class VI Student', initial: 'R' },
     { text: 'What sets TIPS apart is their focus on individual attention. My child struggled initially, but the teachers worked patiently and now he is among the top performers.', name: 'Meena Gupta', role: 'Parent of Class VII Student', initial: 'M' },
-    { text: 'Excellent school with a perfect blend of academics and extracurricular activities. My daughter loves going to school every day, which speaks volumes about the culture here.', name: 'Suresh Agarwal', role: 'Parent of Class V Student', initial: 'S' },
+    { text: 'Excellent school with a perfect blend of academics and extracurricular activities. My daughter loves going to school every day, which speaks volumes about the culture here.', name: 'Suresh Agarwal', role: 'Parent of Class VIII Student', initial: 'S' },
   ];
   const settings = { dots: true, infinite: true, speed: 600, slidesToShow: 2, slidesToScroll: 1, autoplay: true, autoplaySpeed: 4500, responsive: [{ breakpoint: 768, settings: { slidesToShow: 1 } }] };
   return (

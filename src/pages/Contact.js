@@ -32,9 +32,9 @@ const Contact = () => {
   };
 
   const contactInfo = [
-    { icon: <FaMapMarkerAlt />, color: 'gold', title: 'Our Address', lines: ['Tanishka International Public School,', 'Your City, State – PIN Code, India'] },
-    { icon: <FaPhone />, color: '', title: 'Phone Numbers', lines: ['+91 12345 67890', '+91 09876 54321'] },
-    { icon: <FaEnvelope />, color: '', title: 'Email Address', lines: ['info@tanishkaips.com', 'principal@tanishkaips.com'] },
+    { icon: <FaMapMarkerAlt />, color: 'gold', title: 'Our Address', lines: ['Tanishka International Public School,', 'SAINIK COLONY PULIYA NO 1 SANJAY NAGAR BAREILLY UTTAR PRADESH BAREILLY UTTAR PRADESH -243005'] },
+    { icon: <FaPhone />, color: '', title: 'Phone Numbers', lines: ['+91 9458751691'] },
+    { icon: <FaEnvelope />, color: '', title: 'Email Address', lines: ['deltaacademy51@gmail.com', 'principal@tanishkaips.com'] },
     { icon: <FaClock />, color: 'gold', title: 'Office Hours', lines: ['Mon – Fri: 8:00 AM – 4:00 PM', 'Saturday: 8:00 AM – 1:00 PM', 'Sunday: Closed'] },
   ];
 
