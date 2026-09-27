@@ -160,7 +160,7 @@ const NoticesSection = () => {
   const notices = [
     { date: ['12','May'], text: 'Admission forms for 2026-27 are now available. Apply before 30th June 2026.' },
     { date: ['10','May'], text: 'Annual Sports Day will be held on 26th May 2026. All parents are invited.' },
-    { date: ['05','May'], text: 'Result of Class X & XII CBSE board examinations announced. Congratulations to all students.' },
+    
     { date: ['01','May'], text: 'School will remain closed on 15th May 2025 on account of Buddha Purnima.' },
     { date: ['28','Apr'], text: 'Parent-Teacher Meeting scheduled for 20th May 2026. Please confirm attendance.' },
     { date: ['22','Apr'], text: 'Inter-school Science Olympiad registrations open. Contact class teacher for details.' },
